@@ -1,0 +1,15 @@
+# MIDOG.yaml 完整配置
+path: ../datasets_fu  # 数据集根目录（指向 ultralytics-main/datasets，即符号链接目录）
+train: images/train         # 相对于 path 的训练集图像路径（path + train = 实际路径）
+val: images/val             # 相对于 path 的验证集图像路径
+test: images/test           # 相对于 path 的测试集图像路径
+
+# 类别配置
+nc: 2  # 类别总数
+names:
+  0: mitotic figure            # 有丝分裂图
+  1: hard negative/lookalike   # 难例负样本/有丝分裂相似物
+
+# 标签路径（如果标签与图像文件名一一对应且在 labels 目录下，可省略；否则需补充）
+# train_labels: labels/train   # 相对于 path 的训练集标签路径
+# val_labels: labels/val       # 相对于 path 的验证集标签路径
